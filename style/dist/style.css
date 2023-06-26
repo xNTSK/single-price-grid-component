@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: #e5eff5;
+  min-height: 100vh;
+  font-size: 16px;
+  padding: 4.7rem 1.8rem;
+}
+html body {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+html body .main {
+  border-radius: 0.4rem;
+  box-shadow: 0rem 0.5rem 1rem 0.05rem #98a6bd;
+}
+html body .main >div {
+  padding: 1.6rem;
+}
+html body .main .top {
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #fff;
+}
+html body .main .top h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: #2ab2af;
+}
+html body .main .top h4 {
+  color: #c0df34;
+  font-size: 0.9rem;
+}
+html body .main .top p {
+  font-size: 0.85rem;
+  line-height: 1.6rem;
+  color: #98a6bd;
+}
+html body .main .left {
+  background-color: #2ab2af;
+}
+html body .main .left h3 {
+  margin-top: 0;
+}
+html body .main .left .price {
+  display: flex;
+  align-items: center;
+}
+html body .main .left .price h1 {
+  margin: 0;
+}
+html body .main .left .price p {
+  margin: 0 0 0 0.8rem;
+  color: rgba(255,255,255,0.6);
+}
+html body .main .left p {
+  margin-top: 0.5rem;
+}
+html body .main .left button {
+  margin-top: 0.7rem;
+  background-color: #c0df34;
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow: 0rem 0.5rem 1rem 0.05rem #22918f;
+  transition: 0.5s;
+}
+html body .main .left button:hover {
+  background-color: #91ac1b;
+  cursor: pointer;
+}
+html body .main .right {
+  border-radius: 0 0 0.4rem 0.4rem;
+  background-color: #40bfbd;
+}
+html body .main .right h3 {
+  margin-top: 0;
+}
+html body .main .right p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.2rem;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  html {
+    padding: 0 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .main {
+    max-width: 40.5rem;
+    display: grid;
+    grid-template: auto auto/1fr 1fr;
+  }
+  html body .main >div {
+    padding: 2.6rem;
+  }
+  html body .main .top {
+    border-radius: 0.4rem 0.4rem 0 0;
+    grid-area: 1/1/2/3;
+  }
+  html body .main .top h3 {
+    font-size: 1.4rem;
+  }
+  html body .main .top h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  html body .main .top p {
+    font-size: 0.98rem;
+    margin: 0;
+  }
+  html body .main .left {
+    border-radius: 0 0 0 0.4rem;
+  }
+  html body .main .right {
+    border-radius: 0 0 0.4rem 0;
+  }
+}
